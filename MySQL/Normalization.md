@@ -44,3 +44,15 @@ GOAL:
             CONSTRAINT fk_songs_users FOREIGN KEY (song_id) REFERENCES songs(id)
         )
 ```
+
+<!-- WHY DO WE DI NORMALIZATION -->
+
+    Normalization allows us to remove redundant data that causes;
+        - update anomaly
+        - insertion anomaly
+        - deletion anomaly
+    Normal forms  we tend to use:
+        - 1Normalization Form(NF) : every column is atomic (no lists, no repeation group).Each row is Unique
+        - 2NF : In tables where the PK is composite, no partial dependency must exist
+        - 3NF : No transitive dependency: non-key columns don't depend on other non-key column
+        - 4NF/5NF - 
